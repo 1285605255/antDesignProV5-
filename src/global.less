@@ -1,0 +1,92 @@
+@import '~antd/es/style/variable.less';
+
+@font-face {
+  font-family: 'PingFang_SC';
+  src: url('https://test-1253940515.cos.ap-shanghai.myqcloud.com/PingFang_SC.ttf');
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-layout {
+  min-height: 100vh;
+}
+
+.ant-pro-sider.ant-layout-sider.ant-pro-sider-fixed {
+  left: unset;
+}
+
+.ant-pro-global-header-layout-mix .anticon {
+  color: #999999;
+}
+
+.ant-pro-global-header-layout-mix .ant-pro-global-header-logo h1 {
+  height: 20px;
+  font-size: 18px;
+  font-family: Hiragino Sans GB-W6, Hiragino Sans GB;
+  font-weight: bold;
+  color: #333333;
+  line-height: 20px;
+}
+
+.ant-pro-global-header-layout-mix .ant-pro-global-header-logo img {
+  width: 42px;
+  height: 24px;
+}
+
+.ant-pro-global-header-layout-mix {
+  background-color: #FFFFFF;
+  color: #999999;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+@media (max-width: @screen-xs) {
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+
+    &-thead>tr,
+    &-tbody>tr {
+
+      >th,
+      >td {
+        white-space: pre;
+
+        >span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+
+
+// Compatible with IE11
+@media screen and(-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+  body .ant-design-pro>.ant-layout {
+    min-height: 100vh;
+  }
+}
